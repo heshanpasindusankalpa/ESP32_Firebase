@@ -1,4 +1,4 @@
-#include <Arduino.h>
+
 #include <WiFi.h>
 #include <Firebase_ESP_Client.h>
 #include <Wire.h>
@@ -106,12 +106,12 @@ void fetchData() {
     display.clearDisplay();
     display.setTextSize(2);
     display.setCursor(0, 10);
-    display.print("Temp: ");
+    display.print("Temp:");
     display.print(temperature, 1);
     display.print(" C");
 
     display.setCursor(0, 40);
-    display.print("Hum: ");
+    display.print("Hum:");
     display.print(humidity, 1);
     display.print(" %");
 
